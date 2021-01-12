@@ -9,29 +9,33 @@
 
 <div class="ui form">
     <div class="inline fields">
-        <label for="fruit">Select your favorite fruit:</label>
+        <label for="fruit">Select Case Type:</label>
         <div class="field">
             <div class="ui radio checkbox">
-                <input type="radio" name="fruit" checked="" tabindex="0" class="hidden">
-                <label>Apples</label>
+                <input type="radio" id="c" #c value="c" (click)="updateChart(c)" name="caseType" checked="" tabindex="0"
+                    class="hidden">
+                <label for="c">Confirmed</label>
             </div>
         </div>
         <div class="field">
             <div class="ui radio checkbox">
-                <input type="radio" name="fruit" tabindex="0" class="hidden">
-                <label>Oranges</label>
+                <input type="radio" id="d" #d value="d" (click)="updateChart(d)" name="caseType" tabindex="0"
+                    class="hidden">
+                <label for="d">Deaths</label>
             </div>
         </div>
         <div class="field">
             <div class="ui radio checkbox">
-                <input type="radio" name="fruit" tabindex="0" class="hidden">
-                <label>Pears</label>
+                <input type="radio" id="r" #r value="r" (click)="updateChart(r)" name="caseType" tabindex="0"
+                    class="hidden">
+                <label for="r">Recovered</label>
             </div>
         </div>
         <div class="field">
             <div class="ui radio checkbox">
-                <input type="radio" name="fruit" tabindex="0" class="hidden">
-                <label>Grapefruit</label>
+                <input type="radio" id="a" #a value="a" (click)="updateChart(a)" name="caseType" tabindex="0"
+                    class="hidden">
+                <label for="a">Active</label>
             </div>
         </div>
     </div>
