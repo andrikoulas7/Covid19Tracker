@@ -39,13 +39,8 @@ export class DataServiceService {
           } else {
             raw[cs.country] = cs;
           }
-          data.push()
         })
-
-        console.log(raw);
-
-
-        return [];
+        return <GlobalDataSummary[]>Object.values(raw);
       })
     )
   }
