@@ -64,7 +64,11 @@ export class HomeComponent implements OnInit {
       chartType: 'ColumnChart',
       dataTable: dataTable,
       options: {
-        height: 500
+        height: 500,
+        animation: {
+          duration: 1000,
+          easing: 'out',
+        },
       },
     };
   }
